@@ -7,6 +7,7 @@ Environment:
     2. 1Master.
     3. 2Worker.
     4. NIC (NAT,HostOnly,Bridge).
+    5. Some IPv4 addresses for MetalLB to hand out.
 
 Mission:
     1. Deploy metalLB
