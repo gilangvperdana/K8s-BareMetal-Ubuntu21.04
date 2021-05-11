@@ -1,0 +1,36 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-resource-3
+spec:
+  rules:
+  - host: clock.adaptive.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: clock-service
+            port:
+              number: 80
+  - host: bubble.adaptive.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: bubble-service
+            port:
+              number: 80
+  - host: calculator.adaptive.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: calculator-service
+            port:
+              number: 80
