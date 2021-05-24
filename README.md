@@ -120,7 +120,7 @@ $ kubectl create -f Deployment1.yaml,Deployment2.yaml,Deployment3.yaml,Ingress-3
 Check :
 $ kubectl get pod (Make sure all pod running)
 $ kubectl get ingresses (Make sure HOSTS appear, copy that if you want to test)
-# kubectl get services -n ingress-nginx (Copy External IP, if you want to test)
+$ kubectl get services -n ingress-nginx (Copy External IP, if you want to test)
 
 Edit in your Hosts file OS:
 on Ubuntu:
