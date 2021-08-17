@@ -8,6 +8,7 @@ Environment:
     3. 2Worker.
     4. NIC (NAT,HostOnly,Bridge).
     5. Some IPv4 addresses for MetalLB to hand out.
+    6. Kubernetes Cluster v1.21.0
 
 Mission:
     1. Deploy metalLB
@@ -98,7 +99,7 @@ $ kubectl -n kubernetes-dashboard delete clusterrolebinding admin-user
 ```
 Installation:
 Goes to Directory 3.Ingress-Nginx-Controller, and apply that file.
-$ kubectl create -f 1.nginx-v0.33.0.yaml
+$ kubectl create -f 1.nginx-v0.33.0-LB.yaml
 
 Check Componenent:
 $ kubectl get pods -n ingress-nginx \
