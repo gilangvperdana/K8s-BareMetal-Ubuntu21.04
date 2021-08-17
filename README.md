@@ -56,7 +56,7 @@ $ kubectl create -f 2.ServiceLB-Dashboard.yaml
 
 Check K8s Dashboard Component:
 $ kubectl get pod -A -n kubernetes-dashboard
-$ kubectl get service -A n kubernetes-dashboard (check the external ip loadbalancer)
+$ kubectl get service -A -n kubernetes-dashboard (check the external ip loadbalancer)
 
 Access kubernetes dashboard:
 https://iploadbalancer/#/login
