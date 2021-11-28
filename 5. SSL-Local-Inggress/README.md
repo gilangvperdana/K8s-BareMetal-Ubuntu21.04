@@ -46,5 +46,5 @@ $ kubectl apply -f https://gist.githubusercontent.com/t83714/51440e2ed2129916559
 Deploy :
 $ kubectl create -f IngressSSL.yaml
 
-Access on https://clock.adaptive.local \\ https://bubble.adaptive.local \\ https://calculator.adaptive.local
+Access on https://clocks.adaptive.local \\ https://bubbles.adaptive.local \\ https://calculators.adaptive.local
 ```
