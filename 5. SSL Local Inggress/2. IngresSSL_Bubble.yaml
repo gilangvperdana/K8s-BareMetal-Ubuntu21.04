@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: local-ingress
+    annotations:
+        cert-manager.io/cluster-issuer: selfsigned-issuer
+        # optional allow max file upload size 100M
+        nginx.ingress.kubernetes.io/client-body-buffer-size: 100M
+        nginx.ingress.kubernetes.io/proxy-body-size: 100M
+spec:
+    rules:
+        - host: bubbles.adaptive.local
+          http:
+              paths:
+                  - path: /
+                    backend:
+                        serviceName: bubble-service
+                        servicePort: 80
+    tls:
+        - hosts:
+              - bubbles.adaptive.local
+          secretName: bubble-local-cert-tls

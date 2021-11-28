@@ -135,3 +135,7 @@ http://hosts-url-ingresses (http://ex.example.com) #test access must be same net
 ```
 
 
+## If you want to Deploy on TLS/SSL on Local :
+```
+You can go to Directory "5. SSL Local Ingress" and read MD.
+```
