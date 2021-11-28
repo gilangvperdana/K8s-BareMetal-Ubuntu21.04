@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-    name: local-ingress
+    name: clocks-ingress
     annotations:
         cert-manager.io/cluster-issuer: selfsigned-issuer
         # optional allow max file upload size 100M
