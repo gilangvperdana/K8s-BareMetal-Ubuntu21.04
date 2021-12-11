@@ -101,6 +101,17 @@ Installation:
 Goes to Directory 3.Ingress-Nginx-Controller, and apply that file.
 $ kubectl create -f 1.nginx-v0.33.0-LB.yaml
 
+ALTERNATIVE WAY (SELECT ONE) :
+Installation Helm :
+$ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+$ chmod 700 get_helm.sh
+$ ./get_helm.sh
+
+Installation Nginx Ingress :
+$ helm upgrade --install ingress-nginx ingress-nginx \
+  --repo https://kubernetes.github.io/ingress-nginx \
+  --namespace ingress-nginx --create-namespace
+
 Check Componenent:
 $ kubectl get pods -n ingress-nginx \
   -l app.kubernetes.io/name=ingress-nginx --watch (wait until all components are running).
