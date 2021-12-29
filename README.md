@@ -150,3 +150,8 @@ http://hosts-url-ingresses (http://ex.example.com) #test access must be same net
 ```
 You can go to Directory "5. SSL Local Ingress" and read MD.
 ```
+
+## For More YAML Template :
+```
+https://github.com/gilangvperdana/K8sTemplate-YAML
+```
