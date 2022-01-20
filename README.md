@@ -153,5 +153,5 @@ You can go to Directory "5. SSL Local Ingress" and read MD.
 
 ## For More YAML Template :
 ```
-https://github.com/gilangvperdana/K8sTemplate-YAML
+https://github.com/gilangvperdana/K8s-PlayGround
 ```
