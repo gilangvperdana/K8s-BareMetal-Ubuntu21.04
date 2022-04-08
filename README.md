@@ -151,7 +151,8 @@ http://hosts-url-ingresses (http://ex.example.com) #test access must be same net
 You can go to Directory "5. SSL Local Ingress" and read MD.
 ```
 
-## For More YAML Template :
+## More Documentation:
 ```
 https://github.com/gilangvperdana/K8s-PlayGround
+https://gilangvperdana.medium.com/installation-kubernetes-cluster-baremetal-4d70e733ea15
 ```
